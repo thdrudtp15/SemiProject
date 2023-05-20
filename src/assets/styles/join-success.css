@@ -1,0 +1,71 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+@font-face {
+  font-family: "NanumSquareNeo-Variable";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "NanumSquareNeo-Variable";
+  box-sizing: border-box;
+}
+
+.success-wrap {
+  width: 40%;
+  margin: 150px auto;
+  padding: 40px 20px;
+  text-align: center;
+  border: 1px solid #7f7f7f;
+  border-radius: 10px;
+}
+.success-image {
+  width: 300px;
+  margin: 0 auto;
+}
+.success-image img {
+  width: 100%;
+}
+.success-wrap h1 {
+  width: 100%;
+  line-height: 1.5;
+  font-size: 20px;
+  font-weight: bold;
+  color: #3f3f3f;
+}
+
+.success-cont {
+  margin: 50px 0;
+}
+
+.success-cont p {
+  margin: 10px 0;
+  line-height: 1.5;
+  font-size: 17px;
+  color: #3f3f3f;
+}
+
+.success-cont p:nth-child(2) {
+  font-size: 14px;
+}
+
+.success-cont span {
+  color: #eb8644;
+}
+.success-wrap button {
+  width: 130px;
+  margin: 0 15px;
+  padding: 10px 0;
+  font-size: 16px;
+  border: 2px solid #7f7f7f;
+  border-radius: 10px;
+  font-family: "NanumSquareNeo-Variable";
+  font-weight: bold;
+  color: #3f3f3f;
+  transition: all 0.5s;
+}
+
+.success-wrap button:hover {
+  background-color: #7f7f7f;
+  color: #fff;
+}

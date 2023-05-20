@@ -1,0 +1,169 @@
+/* .test::-webkit-scrollbar {
+  display: none;
+}
+.test {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.test {
+  overflow: hidden;
+}
+
+body {
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+} */
+
+.purchase_form_box h2 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.25;
+  word-break: keep-all;
+}
+
+.purchase_form_box {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  max-width: 640px;
+  /* height: 100vh; */
+  margin: 50px auto;
+  box-sizing: border-box;
+  /* overflow: scroll; */
+  font-family: "Noto Sans KR" "Helvetica Neue", Arial, sans-serif;
+  font-weight: normal;
+  color: rgb(30, 29, 41);
+  outline: 0px;
+  font-size: 16px;
+}
+
+.purchase_form_box section {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.purchase_form_box form {
+  padding: 0px 20px 40px;
+  position: relative;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+.purchase_form_box .product_data_box {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px 20px;
+  border-bottom: 10px solid rgb(246, 246, 246);
+}
+
+.purchase_form_box .product_data_box > div {
+  padding: 20px 0px;
+  border-bottom: none;
+  display: flex;
+  align-items: center;
+}
+
+.purchase_form_box .product_data_box img {
+  width: 70px;
+  height: 70px;
+}
+
+.purchase_form_box .product_data_box .product_amount_name {
+  margin-left: 2rem;
+}
+
+.purchase_form_box h3 {
+  font-size: 21px;
+  color: rgb(25, 25, 25);
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.purchase_form_box .delivery_box {
+  padding-top: 50px;
+}
+
+.purchase_form_box .delivery_box > ul {
+  border: 2px solid #7f7f7f;
+  border-radius: 10px;
+  padding: 30px 20px;
+}
+
+.purchase_form_box .delivery_box > ul li {
+  display: flex;
+  margin: 20px 0;
+}
+
+.purchase_form_box .delivery_box > ul li > div {
+  width: 120px;
+}
+
+.purchase_form_box .delivery_box label {
+  font-size: 17px;
+}
+
+.purchase_form_box .delivery_box input {
+  width: 70%;
+  padding: 7px 10px;
+  font-size: 16px;
+  border: 0;
+  border-bottom: 1px solid #7f7f7f;
+}
+
+.purchase_form_box .amount_box {
+  margin-top: 50px;
+}
+
+.purchase_form_box .amount_box ul {
+  padding: 30px 20px;
+  border: 2px solid #7f7f7f;
+  border-radius: 10px;
+}
+
+.purchase_form_box .amount_list {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  font-size: 17px;
+}
+
+.purchase_form_box .amount_list:nth-child(3) {
+  border-bottom: 2px solid #b9b9b980;
+  /* padding: 20px 0; */
+}
+
+.agreement_box {
+  margin: 20px 0;
+}
+.check_box > div {
+  padding: 3px 0;
+}
+
+.purchase_form_box .submit_button {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+  appearance: none;
+  cursor: pointer;
+  width: 130px;
+  padding: 0.5rem 0.5rem;
+  font-family: "Noto Sans KR";
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+  background-color: white;
+  color: #2f2f2f;
+  border: 2px solid #bababa;
+  border-radius: 20px;
+  transition: all 0.2s;
+}
+
+.purchase_form_box .submit_button:hover {
+  color: #fff;
+  background-color: #bababa;
+}

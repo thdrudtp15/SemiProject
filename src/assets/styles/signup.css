@@ -1,0 +1,157 @@
+.register_form_box {
+  width: 80vw;
+  margin: 100px auto;
+  text-align: center;
+}
+
+.register_form_box h2 {
+  font-size: 1.5rem;
+  margin: 70px 0;
+  font-weight: 800;
+}
+
+.register_form_box form {
+  width: 40%;
+  margin: 0 auto;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.register_form_box form > div > input {
+  width: 300px;
+  padding: 10px 0;
+  margin: 10px 0;
+  border: 0;
+  border-bottom: 2px solid #e6e6e6;
+}
+
+.register_form_box .button_summit {
+  width: 300px;
+  height: 50px;
+  border: 1px solid #707070;
+  border-radius: 10px;
+  margin: 50px 0;
+  padding: 10px 0;
+  font-family: "Noto Sans KR";
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #707070;
+  background-color: #707070;
+}
+
+.register_form_box .button_summit:disabled {
+  width: 300px;
+  height: 50px;
+  border-radius: 10px;
+  margin: 50px 0;
+  padding: 10px 0;
+  font-family: "Noto Sans KR";
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid rgb(195, 195, 195);
+  background-color: rgb(195, 195, 195);
+  cursor: default;
+}
+
+.register_form_box form > div {
+  width: 300px;
+  text-align: center;
+  margin: auto;
+}
+
+.register_form_box form > div {
+  margin-top: 25px;
+}
+
+.register_form_box form > div > div {
+  text-align: left;
+}
+
+.register_form_box .check_box > div {
+  display: flex;
+  margin-top: 20px;
+}
+
+.register_form_box .check_box label:hover,
+.register_form_box .check_box input:hover {
+  cursor: pointer;
+}
+
+.register_form_box .check_box span {
+  margin-left: 10px;
+}
+
+.register_form_box .message_hidden {
+  position: absolute;
+  animation-name: fade-out;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  font-size: 12px;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.register_form_box .message_visible {
+  position: absolute;
+  animation-name: fade-in;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  font-size: 12px;
+  color: rgb(255, 119, 119);
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+.register_form_box form > div > input {
+  width: 300px;
+  padding: 10px 0;
+  margin: 10px 0;
+  border: 0;
+  border-bottom: 2px solid #e6e6e6;
+}
+
+.register_form_box .valid input {
+  border-bottom: 2px solid rgb(118, 197, 111);
+  transition: border-bottom 0.4s ease;
+}
+
+.register_form_box .invalid input {
+  border-bottom: 2px solid rgb(255, 119, 119);
+  transition: border-bottom 0.4s ease;
+}
+
+.register_form_box form > div > input:focus {
+  outline: none;
+}
+/* 
+.code_box input {
+  -webkit-text-security: none;
+}
+ */
+.code_box input {
+  -webkit-text-security: disc;
+}

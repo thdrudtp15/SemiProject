@@ -1,0 +1,41 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  padding: 30px 0;
+  background: #707070;
+  color: #fff;
+  overflow: hidden;
+  z-index: "1000";
+}
+.f-left {
+  margin: 0 0 0 30px;
+  width: 30%;
+  overflow: hidden;
+}
+.f-left img {
+  width: 250px;
+  height: 100px;
+  position: center;
+  object-fit: cover;
+}
+.footer p {
+  width: 30%;
+  line-height: 100px;
+  text-align: center;
+}
+.footer .f-right {
+  width: 30%;
+  margin: 0 30px 0 0;
+}
+.footer .f-right ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+}
+.footer .f-right li {
+  width: 30%;
+  padding: 5px 0;
+  text-align: center;
+}

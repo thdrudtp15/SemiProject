@@ -1,0 +1,60 @@
+.option_selector {
+  display: flex;
+  justify-content: space-evenly;
+  width: 500px;
+}
+
+.option_selector img {
+  width: 80px;
+  height: 80px;
+  transition: filter 0.4s ease-in-out;
+}
+
+.option_container_selected {
+  position: relative;
+  z-index: 1;
+}
+
+.option_container_selected img {
+  filter: blur(7px);
+}
+
+.option_container_selected .selected_alt {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: rgba(214, 212, 212, 0.812);
+  color: #333;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 20px;
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+.option_container_not_selected img {
+  filter: none;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid;
+  transition: transform 0.2s ease-in-out;
+}
+
+.option_container_not_selected img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.category {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.option_selector button {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
