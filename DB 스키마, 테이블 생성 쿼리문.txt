@@ -1,0 +1,60 @@
+CREATE DATABASE `soolpanda` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+
+CREATE TABLE `tb_order` (
+  `order_num` int NOT NULL AUTO_INCREMENT,
+  `order_id` varchar(20) NOT NULL,
+  `seller_id` varchar(20) NOT NULL,
+  `prod_num` int NOT NULL,
+  `prod_name` varchar(20) NOT NULL,
+  `prod_price` int NOT NULL,
+  `prod_ea` int NOT NULL,
+  `order_name` varchar(10) DEFAULT NULL,
+  `order_date` datetime NOT NULL,
+  `order_postcode` varchar(10) NOT NULL,
+  `order_addr` varchar(40) NOT NULL,
+  `order_tel` varchar(20) NOT NULL,
+  `order_message` varchar(100) DEFAULT NULL,
+  `order_image` varchar(1000) DEFAULT NULL,
+  PRIMARY KEY (`order_num`)
+) ENGINE=InnoDB AUTO_INCREMENT=57 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE `tb_product` (
+  `prod_num` int NOT NULL AUTO_INCREMENT,
+  `user_id` varchar(20) DEFAULT NULL,
+  `prod_name` varchar(20) DEFAULT NULL,
+  `prod_category` varchar(5) DEFAULT NULL,
+  `prod_abv` float DEFAULT NULL,
+  `prod_volume` int DEFAULT NULL,
+  `prod_price` int DEFAULT NULL,
+  `prod_stock` int DEFAULT NULL,
+  `prod_tag` varchar(50) DEFAULT NULL,
+  `prod_info` varchar(500) DEFAULT NULL,
+  `prod_date` datetime DEFAULT NULL,
+  `prod_readcount` int DEFAULT NULL,
+  `prod_wish` int DEFAULT NULL,
+  `prod_shipping` int DEFAULT NULL,
+  `prod_images` varchar(2000) DEFAULT NULL,
+  `prod_vCount` int DEFAULT '0',
+  PRIMARY KEY (`prod_num`)
+) ENGINE=InnoDB AUTO_INCREMENT=48 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+CREATE TABLE `tb_user` (
+  `user_id` varchar(20) NOT NULL,
+  `user_pwd` varchar(20) NOT NULL,
+  `user_name` varchar(10) NOT NULL,
+  `user_code` varchar(15) NOT NULL,
+  `user_tel` varchar(20) NOT NULL,
+  `user_email` varchar(100) NOT NULL,
+  `user_sns_push_yn` tinyint(1) NOT NULL,
+  `user_email_push_yn` tinyint(1) NOT NULL,
+  PRIMARY KEY (`user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+CREATE TABLE `tb_wishlist` (
+  `wish_id` int NOT NULL AUTO_INCREMENT,
+  `user_id` varchar(20) NOT NULL,
+  `prod_id` int NOT NULL,
+  PRIMARY KEY (`wish_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
