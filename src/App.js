@@ -22,7 +22,6 @@ import DeleteAccount from "./pages/DeleteAccount";
 import Like from "./components/product/Like";
 
 function App() {
-  //주문페이지로 정보를넘기기위한 state
   const [order, setorder] = useState({});
 
   return (

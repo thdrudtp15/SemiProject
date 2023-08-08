@@ -9,10 +9,8 @@ const Card = (props) => {
   }
   var productprice = addComma(props.alcohol.prod_price);
 
-  // if (!props.alcohol.prod_images === undefined)
-  // | (props.alcohol.prod_images !== "") | (props.alcohol.prod_images !== null))
   var arr = props.alcohol.prod_images.replace("[", "").replace("]", "").replaceAll(" ", "").split(",");
-  // console.log(arr);
+
   return (
     <NavLink className="Cardblock" to={`/products/${props.alcohol.prod_num}`} state={{ props }}>
       <div className="Imagebox">
