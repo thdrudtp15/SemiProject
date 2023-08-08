@@ -1,3 +1,5 @@
 모듈 설치시 npm install --force 로 부탁드립니다. 
 패키지 파일에 문제가 있는지 npm install시 설치가 안 됩니다.
 양해부탁드립니다.
+
+프론트엔드 코드를 확인하시려면 feature/frontend 브랜치로 이동하시면 됩니다.
