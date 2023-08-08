@@ -193,23 +193,27 @@ const DetailPageTest = ({ productData, setorder, order }) => {
                 </li>
               </ul>
             </div>
-            <div className="product_info3">
-              <div className="info3_wrap">
-                <p className="product_amount">
-                  총 상품가격&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  <span className="sum">{pprice}원</span>
-                </p>
+            {productData.user_id === window.sessionStorage.getItem("user_id") ? (
+              <div className="userProduct"></div>
+            ) : (
+              <div className="product_info3">
+                <div className="info3_wrap">
+                  <p className="product_amount">
+                    총 상품가격&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span className="sum">{pprice}원</span>
+                  </p>
+                </div>
+                <div className="info btnOpt">
+                  <button className="option btnl" onClick={onClickTest2}>
+                    -
+                  </button>
+                  <span>{number}</span>
+                  <button className="option btnr" onClick={onClickTest}>
+                    +
+                  </button>
+                </div>
               </div>
-              <div className="info btnOpt">
-                <button className="option btnl" onClick={onClickTest2}>
-                  -
-                </button>
-                <span>{number}</span>
-                <button className="option btnr" onClick={onClickTest}>
-                  +
-                </button>
-              </div>
-            </div>
+            )}
             {/* <button className="buy">구매하기</button> */}
             <div>
               {productData.user_id === window.sessionStorage.getItem("user_id") ? (

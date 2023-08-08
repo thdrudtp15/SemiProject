@@ -53,6 +53,10 @@ const ProductCardMain = (props) => {
   }, [countMoreFavr]);
 
   const alcogollength = props.alcohol.length;
+
+  console.log(sliceNew.length === 0);
+  console.log(sliceFavr);
+
   return (
     <>
       <div className="Cardbox">
@@ -61,6 +65,7 @@ const ProductCardMain = (props) => {
             이달의 신상품
             <br /> <span>NEW</span>{" "}
           </p>
+          {sliceNew.length === 0 && <div className="noneProduct">상품이 존재하지 않습니다.</div>}
           {sliceNew.map((alcohol) => {
             return <Card alcohol={alcohol} />;
           })}
@@ -83,6 +88,7 @@ const ProductCardMain = (props) => {
           <p className="after best">
             인기상품 <br /> <span>BEST</span>
           </p>
+          {sliceFavr.length === 0 && <div className="noneProduct">상품이 존재하지 않습니다.</div>}
           {sliceFavr.map((alcohol) => {
             return <Card alcohol={alcohol} />;
           })}
