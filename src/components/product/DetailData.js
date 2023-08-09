@@ -132,13 +132,13 @@ const DetailPageTest = ({ productData, setorder, order }) => {
           prod_id: productData.prod_num,
         })
         .then((response) => {
-          console.log("좋아요를 눌렀슴다.");
           setLiked(true);
           Setlikecnt(likecnt + 1);
           console.log(likecnt);
         })
         .catch((e) => {
-          console.error(e);
+          alert("로그인 후 이용해주세요.");
+          navigate("/login");
         });
     }
   }

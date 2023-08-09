@@ -135,16 +135,6 @@ const Header = () => {
   return (
     <>
       <Headerblock>
-        {/* <a href="/">
-          <img
-            src={logo}
-            alt=""
-            style={{
-              height: "55px",
-              margin: "15px 0 7px 15px",
-            }}
-          />
-        </a> */}
         <a href="/">
           <img
             src={logo}
@@ -153,10 +143,7 @@ const Header = () => {
               height: "55px",
               margin: "15px 0 7px 15px",
             }}
-            className={`logo-image ${loaded ? "loaded" : ""}`} //원본
-            // className={{logo-image} ${loaded ? "loaded" : ""}`}
-            // loaded={condition ? value : undefined}
-            // loaded={loaded}
+            className={`logo-image ${loaded ? "loaded" : ""}`}
             onLoad={() => setLoaded(true)}
           />
         </a>

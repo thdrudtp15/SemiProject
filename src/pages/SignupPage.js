@@ -116,7 +116,7 @@ function SignupForm() {
           alert("중복되는 이메일이 존재합니다.");
           setEmailcheck(false);
           setIsEmail2(false);
-          setId("");
+          setEmail("");
         } else {
           alert("사용가능한 이메일입니다.");
           setEmailcheck(true);

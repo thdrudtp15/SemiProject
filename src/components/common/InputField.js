@@ -19,7 +19,6 @@ const InputField = forwardRef((props, ref) => {
       value={props.value}
       onChange={props.onChange}
       placeholder={props.placeholder}
-      style={{ textAlign: "center" }}
     />
   );
 });
